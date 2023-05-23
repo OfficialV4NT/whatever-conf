@@ -1,0 +1,6 @@
+proc /proc proc defaults 0 0
+# /dev/md/0
+UUID=258df312-5f37-481e-b444-182e86d2a639 /boot ext4 defaults 0 0
+/dev/mapper/luks-24684de9-4869-454e-85d2-4515ba5959d2 / ext4 defaults 0 0 # crypted
+
+proc     /proc     proc     defaults,hidepid=2     0     0         # added by xbdm on 2023-04-11 @ 18:21:29
