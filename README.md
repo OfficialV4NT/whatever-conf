@@ -6,6 +6,7 @@ The WhateverItWorks Open-Source Server Configurations Files.
 ### Nice tools to use
 
 - [https://ssl-config.mozilla.org](https://ssl-config.mozilla.org/)
+- [https://www.yamllint.com](https://www.yamllint.com/) - validate the syntax
 
 
 ### Contributing on AbuseIPDB
