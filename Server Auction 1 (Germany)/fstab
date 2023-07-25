@@ -1,6 +1,29 @@
 proc /proc proc defaults 0 0
 # /dev/md/0
-UUID=258df312-5f37-481e-b444-182e86d2a639 /boot ext4 defaults 0 0
-/dev/mapper/luks-24684de9-4869-454e-85d2-4515ba5959d2 / ext4 defaults 0 0 # crypted
+UUID=06dc1eb8-557f-4e77-bd77-fbc0fc4bc715 /boot ext4 defaults 0 0
+/dev/mapper/luks-4a146003-7165-4181-9c9d-569d1092dbe9 / ext4 defaults 0 0 # crypted
 
-proc     /proc     proc     defaults,hidepid=2     0     0         # added by xbdm on 2023-04-11 @ 18:21:29
+
+myramdisk  /tmp/ramdisk  tmpfs  defaults,size=10G,x-gvfs-show  0  0
+
+package_archive   /var/cache/apt/archives   tmpfs   defaults,size=6G   0   0
+systemd_journal   /var/log/journal       tmpfs      defaults,size=6G    0    0
+nginx_logs     /var/log/nginx/      tmpfs     defaults,size=6G    0    0
+psad          /var/log/psad/        tmpfs    defaults,size=6G     0    0
+usbguard     /var/log/usbguard/     tmpfs    defaults,size=6G     0    0
+unattended-upgrades /var/log/unattended-upgrades/ tmpfs defaults,size=6G 0 0
+letsencrypt  /var/log/letsencrypt/  tmpfs    defaults,size=6G     0    0
+apparmor     /var/log/apparmor/     tmpfs    defaults,size=6G     0    0
+psad/errs    /var/log/psad/errs/     tmpfs    defaults,size=6G     0    0
+ntpstats     /var/log/ntpstats/     tmpfs    defaults,size=6G     0    0
+apt          /var/log/apt/          tmpfs    defaults,size=6G     0   0
+chkrootkit   /var/log/chkrootkit/   tmpfs    defaults,size=6G     0   0
+nginx        /var/log/nginx/        tmpfs    defaults,size=6G     0   0
+private      /var/log/private/      tmpfs    defaults,size=6G     0   0
+journal      /var/log/journal/      tmpfs    defaults,size=6G     0   0
+exim4        /var/log/exim4/        tmpfs    defaults,size=6G     0   0
+aide         /var/log/aide/         tmpfs    defaults,size=6G     0   0
+dist-upgrade /var/log/dist-upgrade/ tmpfs    defaults,size=6G     0   0
+clamav       /var/log/clamav/       tmpfs    defaults,size=6G     0   0
+
+proc     /proc     proc     defaults,hidepid=2     0     0         # added by xbdm on 2023-05-05 @ 14:58:26
