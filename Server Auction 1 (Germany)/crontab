@@ -22,4 +22,7 @@
 # 
 # m h  dom mon dow   command
 0 2 * * * sudo /usr/bin/unattended-upgrade -v
-@daily sudo certbot renew --quiet && sudo systemctl reload prosody nginx
+@daily sudo certbot renew --quiet && sudo systemctl reload nginx
+0 * * * * find /usr/share/nginx/send/uploads/ -mmin +10130 -exec rm {} \;
+0 * * * * find /usr/share/nginx/send/uploads/ -name 7-\* -mmin +10130 -exec rm {} \;
+0 0 * * 1 /home/xbdm/cloudflare-ufw/cloudflare-ufw.sh > /dev/null 2>&1
