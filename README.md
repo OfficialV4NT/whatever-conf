@@ -7,7 +7,7 @@ The WhateverItWorks Open-Source Server Configurations Files.
 
 - [https://ssl-config.mozilla.org](https://ssl-config.mozilla.org/)
 - [https://www.yamllint.com](https://www.yamllint.com/) - validate the syntax
-
+- [https://blog.darrennathanael.com/post/fail2ban-ssh-abuseipdb](https://blog.darrennathanael.com/post/fail2ban-ssh-abuseipdb)
 
 ### Contributing on AbuseIPDB
 <a href="https://www.abuseipdb.com/user/118422" title="AbuseIPDB is an IP address blacklist for webmasters and sysadmins to report IP addresses engaging in abusive behavior on their networks">
